@@ -1,0 +1,125 @@
+body {
+  text-align: right;
+  direction: rtl;
+  font-size: 15px !important;
+}
+
+.pr-4 {
+  padding-right: 0.5rem !important;
+  padding-left: 1.5rem !important;
+}
+
+.home-bottom-3-section-main i {
+  float: left !important;
+  /* display: inline-block; */
+}
+
+.lawyers-slider,
+.middel_thumb_area {
+  direction: ltr !important;
+}
+
+.news-slider {
+  direction: ltr !important;
+}
+
+.middel_thumb_area ul {
+  direction: rtl;
+  padding: 6px;
+  font-size: 14px;
+}
+
+#cssmenu ul ul {
+  position: absolute;
+  left: 0px;
+  /* right: 0px; */
+  top: 0px;
+  padding-top: 6px;
+  font-size: 16px;
+  opacity: 0;
+  -webkit-transition: left 0.2s ease, opacity 0.2s ease-in;
+  -moz-transition: left 0.2s ease, opacity 0.2s ease-in;
+  -ms-transition: left 0.2s ease, opacity 0.2s ease-in;
+  -o-transition: left 0.2s ease, opacity 0.2s ease-in;
+  transition: left 0.2s ease, opacity 0.2s ease-in;
+}
+
+#cssmenu > ul > li > ul {
+  top: -2000px;
+}
+
+cssmenu > ul > li:hover > ul {
+  top: 0px;
+  right: 0;
+  opacity: 1;
+}
+#cssmenu.align-right > ul > li:hover > ul {
+  right: auto;
+  left: 0;
+}
+
+#cssmenu ul ul > li:hover > ul {
+  left: 0px;
+  top: 0px;
+  opacity: 1;
+}
+
+.dropdown-menu {
+  text-align: right;
+}
+
+@media only screen and (max-width: 720px) {
+  #cssmenu #menu-button {
+    width: 100%;
+    padding-right: 550px;
+  }
+
+  .top-area {
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #cssmenu #menu-button {
+    width: 100%;
+    padding-right: 260px;
+  }
+
+  .top-area {
+    height: 213px;
+  }
+}
+
+@media (max-width: 800px),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 720px),
+  not all,
+  not all,
+  not all,
+  only screen and (max-width: 1024px) and (min-resolution: 192dpi),
+  only screen and (max-width: 1024px) and (min-resolution: 2dppx) {
+  #cssmenu ul ul,
+  #cssmenu ul li:hover > ul,
+  #cssmenu > ul > li > ul,
+  #cssmenu ul ul ul,
+  #cssmenu ul ul li:hover > ul,
+  #cssmenu.align-right ul ul,
+  #cssmenu.align-right ul li:hover > ul,
+  #cssmenu.align-right > ul > li > ul,
+  #cssmenu.align-right ul ul ul,
+  #cssmenu.align-right ul ul li:hover > ul {
+    left: 0;
+    right: auto;
+    top: auto;
+    opacity: 1;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    text-align: right;
+  }
+}
+
+@media (min-width: 576px) {
+  .container1 {
+    max-width: 583px;
+  }
+}
